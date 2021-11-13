@@ -2,7 +2,7 @@ import {TodosModel} from "../models/Todos.model";
 
 export const fetchAllTodos = async () => {
     return TodosModel.query()
-    .select(["id", "text", "completed"])
+    .select(["id", "title", "completed"])
     .where({is_active: true})
 }
 

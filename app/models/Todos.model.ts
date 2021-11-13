@@ -8,7 +8,7 @@ export class Todos extends Model{
     }
     
     id!: number;
-    text: string;
+    title: string;
     completed: boolean;
 
     is_active: boolean;
